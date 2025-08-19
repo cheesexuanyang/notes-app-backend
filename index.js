@@ -40,8 +40,8 @@ app.use(cors({
 }));
 
 // API routes - FIXED PATHS (capital A in Authentication)
-app.use('/api/auth', require('./Authentication/routes/routesauth'));
-app.use('/api/notes', require('./Notes/routes/routenotes'));
+app.use('/api/auth', require('./authentication/routes/routesauth'));
+app.use('/api/notes', require('./notes/routes/routenotes'));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
