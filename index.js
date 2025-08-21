@@ -20,8 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
-  'https://xuanyang-notes.netlify.app/login'
-  // Add your Netlify URL here after frontend deployment
+  'https://xuanyang-notes.netlify.app'
 ];
 
 app.use(cors({
